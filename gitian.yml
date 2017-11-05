@@ -3,8 +3,7 @@
   become: yes
   hosts: localhost:hush-build
   vars:
-    # TODO: Move to MyHush/hush
-    hush_git_repo_url: https://github.com/kentsommer/hush
+    hush_git_repo_url: https://github.com/MyHush/hush
     hush_version: v1.0.12-dev
     gpg_key_name: ''
     git_name: ''
