@@ -2,8 +2,7 @@
 - name: Download Hush developer public keys from website.
   become: yes
   get_url:
-    # TODO: Move to MyHush/hush/master/contrib/gitian-downloader/
-    url: "https://raw.githubusercontent.com/kentsommer/hush/master/contrib/gitian-downloader/{{ item.name }}.asc"
+    url: "https://raw.githubusercontent.com/MyHush/hush/master/contrib/gitian-downloader/{{ item.name }}.asc"
     dest: "/tmp/{{ item.id }}.asc"
     owner: "{{ gitian_user }}"
     group: "{{ gitian_user }}"
